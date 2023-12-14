@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Code Book</title>
+    <style>
+        /* Style seperti yang diberikan */
+    </style>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/7d5b8cf8a9.js" crossorigin="anonymous"></script>
+    <div id='container'>
+        <div id='input-container'>
+            <h1>Electronic Code Book</h1>
+            <img src='ecb.jpeg' id='image' width='160'>
+            <input type='text' id='plain-input' placeholder='Plaintext'>
+            <input type='text' id='key-input' placeholder='Key'>
+            <button id='button'>Encrypt<i class='fas fa-arrow-alt-circle-right' id='icon'></i></button>
+        </div>
+        <input id='result' disabled value='Results will appear here...'>
+    </div>
+
+    <script>
+        let button = document.getElementById('button')
+        let plain_input = document.getElementById('plain-input')
+        let key_input = document.getElementById('key-input')
+        let display = document.getElementById('result')
+
+        function encrypt(key, plain) {
+            let arr_key = key.split('')
+            let new_arr_key = []
+            let result = ''
+            let arr_plain = plain.split('')
+
+            if (plain == "" && key == "") {
+                alert("You didn't input anything...")
+            }
+
+            for (var i = 0; i < arr_plain.length; i++) {
+                new_arr_key.push(arr_key[i % arr_key.length])
+                if (arr_plain[i].charCodeAt() !== 32) {
+                    // Operasi XOR antara karakter plainteks dan kunci
+                    result += String.fromCharCode((arr_key[i % arr_key.length].charCodeAt() ^ arr_plain[i].charCodeAt()))
+                } else {
+                    result += ' '
+                }
+            }
+
+            display.value = result
+        }
+
+        button.onclick = () => {
+            encrypt(key_input.value, plain_input.value)
+        }
+    </script>
+</body>
+</html>
