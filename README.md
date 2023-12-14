@@ -3,7 +3,7 @@ Codingan
 ![94](https://github.com/rosmananda/PERT13/assets/95514299/c81c2b82-aae2-4420-ae74-6cd918116d23)
 
 <br>
-![95](https://github.com/rosmananda/PERT13/assets/95514299/f3efc545-5e98-4302-86b3-b4df7c2aa4ec)
+![94](https://github.com/rosmananda/PERT13/assets/95514299/079b6741-e28b-415e-b8ae-7fb5db76124f)
 
 
 Output
