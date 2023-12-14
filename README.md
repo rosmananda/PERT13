@@ -2,8 +2,8 @@ Codingan
 <br>
 ![94](https://github.com/rosmananda/PERT13/assets/95514299/c81c2b82-aae2-4420-ae74-6cd918116d23)
 
-<br>
-![95](https://github.com/rosmananda/PERT13/assets/95514299/1f01cf4d-28bf-4124-a874-af1c1bd1cb9b)
+![95](https://github.com/rosmananda/PERT13/assets/95514299/21637f5b-f915-4617-a11e-c8f80c994aea)
+
 
 
 Output
